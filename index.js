@@ -8,8 +8,9 @@ function RandomBoolean() {
   return Boolean(rand);
 }
 
-function RandomRGB() {
-  return `rgb(${RandomInteger(0, 255)}, ${RandomInteger(0, 255)}, ${RandomInteger(0, 255)})`;
+function RandomRGB(alpha = false) {
+  return `rgb(${RandomInteger(0, 255)}, ${RandomInteger(0, 255)}, ${RandomInteger(0, 255)}
+    ${alpha ? `, ${RandomInteger(1, 10) / 10}` : ""})`;
 }
 
 module.exports = { RandomInteger, RandomBoolean, RandomRGB };
