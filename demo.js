@@ -1,4 +1,5 @@
-const rng = require("./index")
+const { RandomInteger, RandomBoolean} = require("./index")
 
-console.log(rng())
-console.log(rng(1, 6))
+console.log(RandomInteger())
+console.log(RandomInteger(1, 6))
+console.log(RandomBoolean())
