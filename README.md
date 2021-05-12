@@ -5,13 +5,13 @@ It's a simple random things generator.
 ## Install
 
 ```shell
-npm i @ronsong/random-generator
+npm i @rsonglab/random-generator
 ```
 
 ## Usage
 
 ```js
-const { RandomInteger, RandomBoolean, RandomRGB, RandomDate, RandomAnimals } = require("@ronsong/random-generator")
+const { RandomInteger, RandomBoolean, RandomRGB, RandomDate, RandomAnimals } = require("@rsonglab/random-generator")
 
 RandomInteger()
 // 17
@@ -40,7 +40,7 @@ RandomAnimals()
 ...
 ```
 
-live demo: [https://runkit.com/embed/z954rwtibfpr](https://runkit.com/embed/z954rwtibfpr)
+live demo: [https://runkit.com/embed/5of0367c7q0k](https://runkit.com/embed/5of0367c7q0k)
 
 ## APIs
 
