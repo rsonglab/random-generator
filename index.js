@@ -1,3 +1,5 @@
+const animals = require("./helper/animals.json")
+
 function RandomInteger(min = 0, max = 100) {
   return Math.round(Math.random() * (max - min) + min);
 }
@@ -16,4 +18,8 @@ function RandomDate(start = new Date(1900,0,1).getTime(), end = new Date().getTi
   return new Date(RandomInteger(start, end))
 }
 
-module.exports = { RandomInteger, RandomBoolean, RandomRGB, RandomDate };
+function RandomAnimals() {
+  return animals[RandomInteger(0, animals.length - 1)];
+}
+
+module.exports = { RandomInteger, RandomBoolean, RandomRGB, RandomDate, RandomAnimals };
